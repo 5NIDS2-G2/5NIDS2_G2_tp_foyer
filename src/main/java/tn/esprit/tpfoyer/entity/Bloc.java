@@ -16,6 +16,7 @@ import java.util.Set;
 @NoArgsConstructor
 @ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
+//Gestion_Bloc git test
 public class Bloc {
 
     @Id
