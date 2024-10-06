@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 pipeline {
     agent any
 
@@ -24,12 +22,5 @@ pipeline {
                 echo 'Deploying'
             }
         }
-         stage('Relase') {
-                    steps {
-                        echo 'Relasing'
-                    }
-                }
     }
 }
->>>>>>> 3c27ef3 (Create Jenkinsfile)
-
