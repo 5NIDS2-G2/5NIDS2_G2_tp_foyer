@@ -13,6 +13,7 @@ import java.util.List;
 @Tag(name = "Gestion Bloc pour l'équipe 4DS9")
 @RestController
 @AllArgsConstructor
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/bloc")
 public class BlocRestController {
 
