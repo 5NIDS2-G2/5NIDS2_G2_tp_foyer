@@ -18,7 +18,7 @@ public class BlocRestController {
 
     IBlocService blocService;
 
-    //git webhook test
+    //git webhook test 2
     //http://localhost:8089/tpfoyer/bloc/retrieve-all-blocs
 
     @GetMapping("/retrieve-all-blocs")
