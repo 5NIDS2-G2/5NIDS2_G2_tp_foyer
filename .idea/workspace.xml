@@ -5,47 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d0c3e7-1063-4eb7-8c44-c7953a5c858e" name="Changes" comment="Merge branch 'Gestion_Etudiant' of https://github.com/SBI19/tp-foyer into Gestion_Etudiant">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/TpFoyerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/config/ConfigAOP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/BlocRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ChambreRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/EtudiantRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/FoyerRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ReservationRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/UniversiteRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Bloc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Chambre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Etudiant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Foyer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Reservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/TypeChambre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Universite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/BlocRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/ChambreRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/EtudiantRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/FoyerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/ReservationRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/UniversiteRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/BlocServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ChambreServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/EtudiantServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/FoyerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IBlocService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IChambreService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IEtudiantService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IFoyerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IReservationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IUniversiteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ReservationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/UniversiteServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tp-foyer-5.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tp-foyer-5.0.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,43 +55,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.tp-foyer [clean].executor": "Run",
-    "Maven.tp-foyer [compile].executor": "Run",
-    "Maven.tp-foyer [install].executor": "Run",
-    "Maven.tp-foyer [test].executor": "Run",
-    "Maven.tp-foyer [verify].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.TpFoyerApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Gestion__Etudiant",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Lenovo/IdeaProjects/tp-foyer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.50344825",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "spring.configuration.checksum": "b80b6ee5957adf63a69ba7deec4e932c",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.tp-foyer [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tp-foyer [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tp-foyer [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tp-foyer [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tp-foyer [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.TpFoyerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Gestion__Etudiant&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/IdeaProjects/tp-foyer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.50344825&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b80b6ee5957adf63a69ba7deec4e932c&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tn.esprit.tpfoyer.service" />
@@ -419,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729365424844</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Merge branch 'Gestion_Etudiant' of https://github.com/SBI19/tp-foyer into Gestion_Etudiant">
+      <option name="closed" value="true" />
+      <created>1729367306206</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729367306206</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,6 +423,7 @@
     <MESSAGE value="Create Jenkinsfile" />
     <MESSAGE value="Update Jenkinsfile" />
     <MESSAGE value="Nexus" />
+    <MESSAGE value="Nexus-deploiement" />
     <MESSAGE value="Merge branch 'Gestion_Etudiant' of https://github.com/SBI19/tp-foyer into Gestion_Etudiant" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'Gestion_Etudiant' of https://github.com/SBI19/tp-foyer into Gestion_Etudiant" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
