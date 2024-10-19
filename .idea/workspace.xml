@@ -5,54 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d0c3e7-1063-4eb7-8c44-c7953a5c858e" name="Changes" comment="Nexus">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2024_13_15_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2024_13_15__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/TpFoyerApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/config/ConfigAOP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/BlocRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ChambreRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/EtudiantRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/FoyerRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ReservationRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/UniversiteRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Bloc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Chambre.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Etudiant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Foyer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Reservation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/TypeChambre.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Universite.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/BlocRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/ChambreRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/EtudiantRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/FoyerRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/ReservationRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/UniversiteRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/BlocServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ChambreServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/EtudiantServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/FoyerServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IBlocService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IChambreService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IEtudiantService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IFoyerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IReservationService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IUniversiteService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ReservationServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/UniversiteServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/tp-foyer-5.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/tp-foyer-5.0.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2024_13_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2024_13_15__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/TpFoyerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/config/ConfigAOP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/BlocRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ChambreRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/EtudiantRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/FoyerRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ReservationRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/UniversiteRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Bloc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Chambre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Etudiant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Foyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Reservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/TypeChambre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Universite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/BlocRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/ChambreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/EtudiantRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/FoyerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/ReservationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/UniversiteRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/BlocServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ChambreServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/EtudiantServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/FoyerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IBlocService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IChambreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IEtudiantService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IFoyerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IReservationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IUniversiteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ReservationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/UniversiteServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tp-foyer-5.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tp-foyer-5.0.0.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +298,7 @@
       <workItem from="1728199790619" duration="1557000" />
       <workItem from="1728817768701" duration="777000" />
       <workItem from="1729361865001" duration="80000" />
-      <workItem from="1729362015086" duration="1117000" />
+      <workItem from="1729362015086" duration="1425000" />
     </task>
     <task id="LOCAL-00001" summary="haggar">
       <option name="closed" value="true" />
@@ -385,7 +380,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729364361155</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Nexus">
+      <option name="closed" value="true" />
+      <created>1729364432567</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729364432567</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Nexus">
+      <option name="closed" value="true" />
+      <created>1729364448147</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729364448147</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,6 +431,7 @@
     <MESSAGE value="haggar" />
     <MESSAGE value="Create Jenkinsfile" />
     <MESSAGE value="Update Jenkinsfile" />
+    <MESSAGE value="Merge branch 'Gestion_Etudiant' of https://github.com/SBI19/tp-foyer into Gestion_Etudiant" />
     <MESSAGE value="Nexus" />
     <option name="LAST_COMMIT_MESSAGE" value="Nexus" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
