@@ -17,6 +17,7 @@
         <java.version>17</java.version>
     </properties>
     <!-- Deploy to Nexus -->
+    <!--Test commit-->
     <distributionManagement>
         <repository>
             <id>deploymentRepo</id>
