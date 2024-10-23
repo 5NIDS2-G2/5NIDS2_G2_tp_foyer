@@ -8,7 +8,7 @@ services:
       - "8089:8089"  # Exposes Spring Boot app
       - "8085:8085"  # Exposes management (Actuator) port
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3305/db?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/db?createDatabaseIfNotExist=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: kxld123
       SPRING_JPA_SHOW_SQL: "true"
@@ -28,7 +28,7 @@ services:
       MYSQL_ROOT_PASSWORD: kxld123
       MYSQL_DATABASE: db
     ports:
-      - "3305:3306"  # Map port 3305 on the host to 3306 inside the container
+      - "3306:3306"  # Map port 3305 on the host to 3306 inside the container
     volumes:
       - mysql-data:/var/lib/mysql  # Mounts volume for data persistence
     networks:
@@ -38,7 +38,7 @@ services:
     image: angular-docker:latest
     container_name: angular-app
     ports:
-      - "4200:80"  # Exposes Angular app on port 4200
+      - "4200:4200"  # Exposes Angular app on port 4200
     depends_on:
       - spring-app
     networks:
