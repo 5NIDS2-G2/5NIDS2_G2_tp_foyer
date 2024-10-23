@@ -2,14 +2,14 @@ package tn.esprit.tpfoyer.entity;
 
 
 import jakarta.persistence.*;
-import javax.persistence.Id;
+
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.util.Set;
 
 
-@javax.persistence.Entity
+@Entity
 @Getter
 @Setter
 @AllArgsConstructor
