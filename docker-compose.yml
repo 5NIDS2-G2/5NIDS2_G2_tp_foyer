@@ -2,11 +2,11 @@ version: "3.8"
 
 services:
   mysqldb:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=
-      - MYSQL_DATABASE=timesheet_db
+      - MYSQL_DATABASE=haggar
     ports:
       - "3306:3306"
     volumes:
@@ -23,7 +23,7 @@ services:
         "spring.datasource.url" : "jdbc:mysql://mysqldb:3306/haggar?createDatabaseIfNotExist=true",
         "spring.datasource.username"  : "root", 
         "spring.datasource.password"  : null,
-        "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQLDialect",
+        "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL8Dialect",
         "spring.jpa.hibernate.ddl-auto" : "update"
       }'
     stdin_open: true
