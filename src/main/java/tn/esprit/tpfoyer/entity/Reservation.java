@@ -1,6 +1,7 @@
 package tn.esprit.tpfoyer.entity;
 
 import jakarta.persistence.*;
+import javax.persistence.Id;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -8,7 +9,7 @@ import java.util.Date;
 import java.util.Set;
 
 
-@Entity
+@javax.persistence.Entity
 @Getter
 @Setter
 @AllArgsConstructor
