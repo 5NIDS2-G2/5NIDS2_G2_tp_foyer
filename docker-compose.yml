@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  spring-app:
+    image: kxld/foyer_app:latest
+    container_name: spring-app
+    ports:
+      - "8089:8089"  # Exposes Spring Boot app
+      - "8085:8085"  # Exposes management (Actuator) port
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3305/db?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: kxld123
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_JPA_HIBERNATE_DDL_AUTO: "update"
+      SERVER_SERVLET_CONTEXT_PATH: "/tpfoyer"
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "*"
+      MANAGEMENT_ENDPOINT_HEALTH_SHOW_DETAILS: "always"
+    depends_on:
+      - mysql-db
+    networks:
+      - default
+
+  mysql-db:
+    image: mysql:latest
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: kxld123
+      MYSQL_DATABASE: db
+    ports:
+      - "3305:3306"  # Map port 3305 on the host to 3306 inside the container
+    volumes:
+      - mysql-data:/var/lib/mysql  # Mounts volume for data persistence
+    networks:
+      - default
+
+  angular-app:
+    image: angular-docker:latest
+    container_name: angular-app
+    ports:
+      - "4200:80"  # Exposes Angular app on port 4200
+    depends_on:
+      - spring-app
+    networks:
+      - default
+
+volumes:
+  mysql-data:  # Defines the volume for MySQL data persistence
