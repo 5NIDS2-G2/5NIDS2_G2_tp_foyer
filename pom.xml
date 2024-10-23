@@ -42,14 +42,20 @@
         <dependency>
             <groupId>mysql</groupId> <!-- This is usually 'mysql' for the connector -->
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.28</version> <!-- Specify the version you want to use -->
+            <version>8.0.30</version> <!-- Specify the version you want to use -->
         </dependency>
 
 
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>4.1.4.Final</version> <!-- or a compatible version -->
+            <version>6.5.3.Final</version> <!-- or a compatible version -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.common</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
+            <version>6.0.0.Final</version>
         </dependency>
 
         <dependency>
