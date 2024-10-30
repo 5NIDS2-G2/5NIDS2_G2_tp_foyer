@@ -8,7 +8,6 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import tn.esprit.tpfoyer.entity.Chambre;
 import tn.esprit.tpfoyer.entity.TypeChambre;
-import tn.esprit.tpfoyer.repository.ChambreRepository;
 
 import java.util.List;
 
@@ -16,7 +15,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(SpringExtension.class)
 @DataJpaTest
-@ActiveProfiles("test")
 class ChambreRepositoryTest {
 
     @Autowired
@@ -32,13 +30,10 @@ class ChambreRepositoryTest {
         chambreRepository.save(chambre);
     }
 
-    // Comment out all other test methods to focus on the isolated test in the controller test
-    // @Test
-    // void testFindAllByTypeC() { ... }
-
-    // @Test
-    // void testFindChambreByNumeroChambre() { ... }
-
-    // @Test
-    // void testTrouverChselonEt() { ... }
+    @Test
+    void testFindByType() {
+        List<Chambre> chambres = chambreRepository.findByTypeC(TypeChambre.SIMPLE);
+        assertEquals(1, chambres.size());
+        assertEquals(TypeChambre.SIMPLE, chambres.get(0).getTypeC());
+    }
 }
