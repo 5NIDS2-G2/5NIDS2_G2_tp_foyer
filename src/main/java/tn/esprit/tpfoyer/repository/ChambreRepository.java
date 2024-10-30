@@ -16,30 +16,6 @@ public interface ChambreRepository extends JpaRepository<Chambre, Long> {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Trouver toutes les chambres qui sont de typ SIMPlE :
 
 
