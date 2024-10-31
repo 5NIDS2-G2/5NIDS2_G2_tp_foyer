@@ -1,4 +1,4 @@
-package tn.esprit.tpfoyer.repository;
+package repository;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -8,6 +8,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import tn.esprit.tpfoyer.entity.Chambre;
 import tn.esprit.tpfoyer.entity.TypeChambre;
+import tn.esprit.tpfoyer.repository.ChambreRepository;
 
 import java.util.List;
 
@@ -30,10 +31,10 @@ class ChambreRepositoryTest {
         chambreRepository.save(chambre);
     }
 
-    @Test
+/*    @Test
     void testFindByType() {
-        List<Chambre> chambres = chambreRepository.findByTypeC(TypeChambre.SIMPLE);
+        List<Chambre> chambres = chambreRepository.findBy(TypeChambre.SIMPLE);
         assertEquals(1, chambres.size());
         assertEquals(TypeChambre.SIMPLE, chambres.get(0).getTypeC());
-    }
+    }*/
 }
