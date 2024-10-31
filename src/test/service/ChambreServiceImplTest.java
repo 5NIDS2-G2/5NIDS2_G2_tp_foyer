@@ -32,6 +32,7 @@ class ChambreServiceImplTest {
     void testRetrieveAllChambres() {
         Chambre chambre1 = new Chambre();
         Chambre chambre2 = new Chambre();
+
         when(chambreRepository.findAll()).thenReturn(Arrays.asList(chambre1, chambre2));
 
         List<Chambre> chambres = chambreService.retrieveAllChambres();

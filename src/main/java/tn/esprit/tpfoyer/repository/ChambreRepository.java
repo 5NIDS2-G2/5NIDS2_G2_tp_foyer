@@ -15,7 +15,7 @@ public interface ChambreRepository extends JpaRepository<Chambre, Long> {
 
 
 
-
+    List<Chambre> findByTypeC(TypeChambre typeC);
 // Trouver toutes les chambres qui sont de typ SIMPlE :
 
 
@@ -24,21 +24,7 @@ public interface ChambreRepository extends JpaRepository<Chambre, Long> {
 
 
 
-
-    /* No need to code CRUD here. Its is already in the
-    interfaces provided by the framework Spring Data JPA :
-       - CrudRepository or
-       - PagingAndSortingRepository or
-       - JpaRepository
-     */
-
-
-
-
-
     Chambre findChambreByNumeroChambre(Long num);
-
-
 
 
 

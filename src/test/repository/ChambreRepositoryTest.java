@@ -3,8 +3,10 @@ package repository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.stereotype.Repository;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import tn.esprit.tpfoyer.entity.Chambre;
 import tn.esprit.tpfoyer.entity.TypeChambre;
@@ -18,14 +20,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @DataJpaTest
 class ChambreRepositoryTest {
 
-    @Autowired
-    private ChambreRepository chambreRepository;
 
-    private Chambre chambre;
+    @Mock
+    private ChambreRepository chambreRepository;
 
     @BeforeEach
     void setUp() {
-        chambre = new Chambre();
+        Chambre chambre = new Chambre();
         chambre.setNumeroChambre(101L);
         chambre.setTypeC(TypeChambre.SIMPLE);
         chambreRepository.save(chambre);
@@ -33,8 +34,9 @@ class ChambreRepositoryTest {
 
     @Test
     void testFindByType() {
-        List<Chambre> chambres = chambreRepository.findBy(TypeChambre.SIMPLE);
+        List<Chambre> chambres = chambreRepository.findByTypeC(TypeChambre.SIMPLE);
         assertEquals(1, chambres.size());
         assertEquals(TypeChambre.SIMPLE, chambres.get(0).getTypeC());
     }
+
 }
