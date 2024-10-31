@@ -31,10 +31,10 @@ class ChambreRepositoryTest {
         chambreRepository.save(chambre);
     }
 
-/*    @Test
+    @Test
     void testFindByType() {
         List<Chambre> chambres = chambreRepository.findBy(TypeChambre.SIMPLE);
         assertEquals(1, chambres.size());
         assertEquals(TypeChambre.SIMPLE, chambres.get(0).getTypeC());
-    }*/
+    }
 }
