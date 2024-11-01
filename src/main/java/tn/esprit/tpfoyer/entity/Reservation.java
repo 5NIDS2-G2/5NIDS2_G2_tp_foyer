@@ -1,6 +1,7 @@
 package tn.esprit.tpfoyer.entity;
 
 import jakarta.persistence.*;
+
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -26,24 +27,11 @@ public class Reservation {
     boolean estValide;
 
 
-
-
-
-
-
-
-
-
-
     @ManyToMany
     Set<Etudiant> etudiants;
-
-
 
 
     /*@ToString.Exclude
     @JsonIgnore*/
 
 }
-
-
