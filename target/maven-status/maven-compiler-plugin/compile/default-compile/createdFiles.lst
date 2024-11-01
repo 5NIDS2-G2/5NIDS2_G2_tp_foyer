@@ -19,6 +19,7 @@ tn/esprit/tpfoyer/service/BlocServiceImpl.class
 tn/esprit/tpfoyer/entity/Reservation.class
 tn/esprit/tpfoyer/control/ReservationRestController.class
 tn/esprit/tpfoyer/TpFoyerApplication.class
+tn/esprit/tpfoyer/Calculator.class
 tn/esprit/tpfoyer/entity/Foyer.class
 tn/esprit/tpfoyer/entity/Universite.class
 tn/esprit/tpfoyer/repository/UniversiteRepository.class
