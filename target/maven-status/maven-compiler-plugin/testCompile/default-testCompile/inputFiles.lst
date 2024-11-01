@@ -1,3 +1,1 @@
-/home/abdo/tp-foyer/src/test/java/tn/esprit/tpfoyer/controller/ReservationRestControllerTest.java
-/home/abdo/tp-foyer/src/test/java/tn/esprit/tpfoyer/repository/ReservationRepositoryTest.java
-/home/abdo/tp-foyer/src/test/java/tn/esprit/tpfoyer/service/ReservationServiceImplTest.java
+/home/abdo/tp-foyer/src/test/java/tn/esprit/tpfoyer/controller/ChambreRestControllerTest.java
