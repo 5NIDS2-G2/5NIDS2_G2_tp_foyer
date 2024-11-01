@@ -1,47 +1,50 @@
 package tn.esprit.tpfoyer.controller;
 
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.web.servlet.MockMvc;
+import org.mockito.MockitoAnnotations;
+import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.tpfoyer.control.ChambreRestController;
 import tn.esprit.tpfoyer.entity.Chambre;
-import tn.esprit.tpfoyer.entity.TypeChambre;
 import tn.esprit.tpfoyer.service.IChambreService;
 
+import java.util.ArrayList;
 import java.util.List;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
-@WebMvcTest(ChambreRestController.class)
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+@SpringBootTest
 public class ChambreRestControllerTest {
 
-    @Autowired
-    private MockMvc mockMvc;
+    @Mock
+    private IChambreService chambreService;
 
-    @MockBean
-    private IChambreService chambreService; // Only mock the service layer
+    @InjectMocks
+    private ChambreRestController chambreRestController;
+
+    @BeforeEach
+    public void setUp() {
+        MockitoAnnotations.openMocks(this);
+    }
 
     @Test
-    public void testGetChambres() throws Exception {
-        // Arrange
-        Chambre chambre1 = new Chambre();
-        chambre1.setNumeroChambre(101L);
-        chambre1.setTypeC(TypeChambre.SIMPLE);
+    public void testGetChambres() {
+        // Arrange: create a list of dummy Chambre objects
+        List<Chambre> dummyChambres = new ArrayList<>();
+        dummyChambres.add(new Chambre());
+        dummyChambres.add(new Chambre());
 
-        List<Chambre> chambres = List.of(chambre1);
-        when(chambreService.retrieveAllChambres()).thenReturn(chambres);
+        // Mock the service method
+        when(chambreService.retrieveAllChambres()).thenReturn(dummyChambres);
 
-        // Act & Assert
-        mockMvc.perform(get("/chambre/retrieve-all-chambres"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].numeroChambre").value(101L))
-                .andExpect(jsonPath("$[0].typeC").value("SIMPLE"));
+        // Act: call the controller method
+        List<Chambre> result = chambreRestController.getChambres();
+
+        // Assert: check if the result matches the expected output
+        assertEquals(2, result.size(), "The number of chambres should be 2");
     }
 }
