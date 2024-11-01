@@ -34,7 +34,7 @@ class BlocRepositoryTest {
         mockBloc.setIdBloc(1L);
         mockBloc.setNomBloc("Bloc1");
         mockBloc.setCapaciteBloc(100L);
-    }
+     }
 
     @Test
     void testFindAllByCapaciteBlocGreaterThan() {
