@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: repository.ChambreRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in repository.ChambreRepositoryTest
+repository.ChambreRepositoryTest.testFindAllByFoyerIsNull -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "tn.esprit.tpfoyer.repository.BlocRepository.findAllByFoyerIsNull()" because "this.blocRepository" is null
+	at repository.ChambreRepositoryTest.testFindAllByFoyerIsNull(ChambreRepositoryTest.java:101)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+repository.ChambreRepositoryTest.testFindAllByNomBlocStartingWith -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "tn.esprit.tpfoyer.repository.BlocRepository.findAllByNomBlocStartingWith(String)" because "this.blocRepository" is null
+	at repository.ChambreRepositoryTest.testFindAllByNomBlocStartingWith(ChambreRepositoryTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+repository.ChambreRepositoryTest.testFindAllByCapaciteBlocGreaterThan -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "tn.esprit.tpfoyer.repository.BlocRepository.findAllByCapaciteBlocGreaterThan(long)" because "this.blocRepository" is null
+	at repository.ChambreRepositoryTest.testFindAllByCapaciteBlocGreaterThan(ChambreRepositoryTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+repository.ChambreRepositoryTest.testFindBlocByNomBlocAndCapaciteBlocGreaterThan -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "tn.esprit.tpfoyer.repository.BlocRepository.findBlocByNomBlocAndCapaciteBlocGreaterThan(String, long)" because "this.blocRepository" is null
+	at repository.ChambreRepositoryTest.testFindBlocByNomBlocAndCapaciteBlocGreaterThan(ChambreRepositoryTest.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+repository.ChambreRepositoryTest.testFindByNomBloc -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "tn.esprit.tpfoyer.repository.BlocRepository.findByNomBloc(String)" because "this.blocRepository" is null
+	at repository.ChambreRepositoryTest.testFindByNomBloc(ChambreRepositoryTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+repository.ChambreRepositoryTest.testFindAllByNomBlocAndCapaciteBloc -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "tn.esprit.tpfoyer.repository.BlocRepository.findAllByNomBlocAndCapaciteBloc(String, long)" because "this.blocRepository" is null
+	at repository.ChambreRepositoryTest.testFindAllByNomBlocAndCapaciteBloc(ChambreRepositoryTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
