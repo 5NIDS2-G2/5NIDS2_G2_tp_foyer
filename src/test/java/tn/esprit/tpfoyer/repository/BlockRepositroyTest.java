@@ -7,6 +7,7 @@ import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import tn.esprit.tpfoyer.entity.Bloc;
+import tn.esprit.tpfoyer.service.BlocServiceImpl;
 import tn.esprit.tpfoyer.service.IBlocService;
 
 import java.util.List;
@@ -24,7 +25,7 @@ class BlocRepositoryTest {
     private BlocRepository blocRepository;
 
     @InjectMocks
-    private IBlocService blocService;  // Assuming you have a service layer that interacts with the repository
+    private BlocServiceImpl blocService;  // Assuming you have a service layer that interacts with the repository
 
     private Bloc mockBloc;
 
