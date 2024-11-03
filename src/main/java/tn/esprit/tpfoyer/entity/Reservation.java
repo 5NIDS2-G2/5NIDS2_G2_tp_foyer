@@ -1,6 +1,7 @@
 package tn.esprit.tpfoyer.entity;
 
 import jakarta.persistence.*;
+
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -12,6 +13,7 @@ import java.util.Set;
 @Getter
 @Setter
 @AllArgsConstructor
+//test git
 @NoArgsConstructor
 @ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -25,24 +27,11 @@ public class Reservation {
     boolean estValide;
 
 
-
-
-
-
-
-
-
-
-
     @ManyToMany
     Set<Etudiant> etudiants;
-
-
 
 
     /*@ToString.Exclude
     @JsonIgnore*/
 
 }
-
-
