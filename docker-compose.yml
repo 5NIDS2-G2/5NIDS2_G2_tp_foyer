@@ -5,24 +5,24 @@ services:
     image: mysql:8.0
     restart: unless-stopped
     environment:
-      - MYSQL_ROOT_PASSWORD=
-      - MYSQL_DATABASE=timesheet_db
+      - MYSQL_ROOT_PASSWORD=abdo
+      - MYSQL_DATABASE=db
     ports:
-      - "3306:3306"
+      - "3308:3308"
     volumes:
       - db:/var/lib/mysql
   app-timesheet:
     depends_on:
       - mysqldb
-    image: selim19/tp-foyer:5.0.0
+    image: abdo/tp-foyer:5.0.0
     restart: on-failure
     ports:
       - "8082:8082"
     environment:
       SPRING APPLICATION_JSON: '{
-        "spring.datasource.url" : "jdbc:mysql://mysqldb:3306/timesheet_db?createDatabaseIfNotExist=true",
+        "spring.datasource.url" : "jdbc:mysql://mysqldb:3308/db?createDatabaseIfNotExist=true",
         "spring.datasource.username"  : "root", 
-        "spring.datasource.password"  : null,
+        "spring.datasource.password"  : abdo,
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL8Dialect",
         "spring.jpa.hibernate.ddl-auto" : "update"
       }'
