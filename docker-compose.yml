@@ -8,16 +8,16 @@ services:
       - MYSQL_ROOT_PASSWORD=abdo
       - MYSQL_DATABASE=db
     ports:
-      - "3308:3308"
+      - "3309:3308"
     volumes:
       - db:/var/lib/mysql
   app-timesheet:
     depends_on:
       - mysqldb
-    image: abdo/tp-foyer:5.0.0
+    image: abdodocker1/tp-foyer:5.0.0
     restart: on-failure
     ports:
-      - "8082:8082"
+      - "8082:8089"
     environment:
       SPRING APPLICATION_JSON: '{
         "spring.datasource.url" : "jdbc:mysql://mysqldb:3308/db?createDatabaseIfNotExist=true",
