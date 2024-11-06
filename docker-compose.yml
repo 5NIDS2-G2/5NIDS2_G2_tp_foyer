@@ -14,7 +14,7 @@ services:
   app-timesheet:
     depends_on:
       - mysqldb
-    image: selim19/tp-foyer:5.0.0
+    image: selim19/BENISMAILSelim_G2_tpfoyer:5.0.0
     restart: on-failure
     ports:
       - "8082:8082"
