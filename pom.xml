@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>tn.esprit</groupId>
-    <artifactId>tp-foyer</artifactId>
+    <artifactId>5NIDS2-G2-tpfoyer</artifactId>
     <version>5.0.0</version>
-    <name>tp-foyer</name>
+    <name>5NIDS2-G2-tpfoyer</name>
     <description>tp-foyer</description>
     <properties>
         <java.version>17</java.version>
