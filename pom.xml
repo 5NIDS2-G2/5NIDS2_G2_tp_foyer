@@ -51,23 +51,38 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+<build>
+    <plugins>
+        <!-- Spring Boot Maven Plugin -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <excludes>
+                    <exclude>
+                        <groupId>org.projectlombok</groupId>
+                        <artifactId>lombok</artifactId>
+                    </exclude>
+                </excludes>
+            </configuration>
+        </plugin>
 
+        <!-- SpotBugs Maven Plugin -->
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>spotbugs-maven-plugin</artifactId>
+            <version>4.2.3</version> <!-- You can check for the latest version -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>spotbugs</goal>
+                    </goals>
+                    <phase>verify</phase> <!-- Can also be 'test' or 'package' -->
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
     <distributionManagement>
         <repository>
             <id>nexus-releases</id>
