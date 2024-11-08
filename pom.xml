@@ -82,8 +82,6 @@
     </plugins>
 </build>
 
-    </plugins>
-</build>
     <distributionManagement>
         <repository>
             <id>nexus-releases</id>
