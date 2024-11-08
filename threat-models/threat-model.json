@@ -1,0 +1,39 @@
+{
+  "version": "2.2.0",
+  "summary": {
+    "title": "SpringBootProjectThreatModel",
+    "owner": "",
+    "description": "Threat model for Spring Boot application",
+    "id": 0
+  },
+  "detail": {},
+  "contributors": [],
+  "diagrams": [
+    {
+      "title": "System Overview",
+      "diagramType": "DFD",
+      "nodes": [
+        {
+          "id": 1,
+          "type": "Process",
+          "name": "Web Application",
+          "threats": [
+            {
+              "id": 101,
+              "type": "Injection",
+              "description": "Possible SQL injection risk in user inputs",
+              "mitigation": "Sanitize inputs and use prepared statements"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "source": "User",
+          "target": "Web Application",
+          "description": "User sends HTTP requests"
+        }
+      ]
+    }
+  ]
+}
