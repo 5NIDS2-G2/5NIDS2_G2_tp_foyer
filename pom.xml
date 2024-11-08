@@ -67,24 +67,22 @@
             </configuration>
         </plugin>
 <plugin>
-      <groupId>org.codehaus.mojo</groupId>
-      <artifactId>findbugs-maven-plugin</artifactId>
-      <version>3.0.5</version>
-      <executions>
-        <execution>
-          <goals>
-            <goal>findbugs</goal>
-          </goals>
-          <configuration>
-            <fork>false</fork>
-            <sourceEncoding>UTF-8</sourceEncoding>
-            <excludeFilterFile>findbugs-exclude.xml</excludeFilterFile>
-            <effort>Max</effort>
-            <threshold>High</threshold>
-          </configuration>
-        </execution>
-      </executions>
-    </plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>checkstyle-maven-plugin</artifactId>
+            <version>3.1.2</version> <!-- Use the latest version -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>checkstyle</goal>
+                    </goals>
+                    <phase>verify</phase> <!-- or 'test' or 'package' -->
+                </execution>
+            </executions>
+            <configuration>
+                <configLocation>google_checks.xml</configLocation> <!-- You can use different configurations -->
+                <encoding>UTF-8</encoding>
+            </configuration>
+        </plugin>
     </plugins>
 </build>
 
