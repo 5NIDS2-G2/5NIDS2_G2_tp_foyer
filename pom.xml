@@ -66,15 +66,18 @@
                 </excludes>
             </configuration>
         </plugin>
-<plugin>
+ <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>
             <version>3.6.0</version>
-            <configuration>
-                <!-- You can customize configuration here -->
-                <configLocation>config/checkstyle/checkstyle.xml</configLocation> <!-- optional: your custom checkstyle config -->
-                <failsOnError>true</failsOnError> <!-- optional: make build fail on style violations -->
-            </configuration>
+            <executions>
+                <execution>
+                    <phase>validate</phase>
+                    <goals>
+                        <goal>checkstyle</goal>
+                    </goals>
+                </execution>
+            </executions>
         </plugin>
     </plugins>
 </build>
