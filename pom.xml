@@ -76,6 +76,7 @@
             <goal>findbugs</goal>
           </goals>
           <configuration>
+            <fork>false</fork>
             <sourceEncoding>UTF-8</sourceEncoding>
             <excludeFilterFile>findbugs-exclude.xml</excludeFilterFile>
             <effort>Max</effort>
