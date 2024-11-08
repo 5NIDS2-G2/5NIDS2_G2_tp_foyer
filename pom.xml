@@ -71,7 +71,7 @@
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>spotbugs-maven-plugin</artifactId>
-            <version>4.2.3</version> <!-- You can check for the latest version -->
+            <version>4.8.4</version> <!-- You can check for the latest version -->
             <executions>
                 <execution>
                     <goals>
