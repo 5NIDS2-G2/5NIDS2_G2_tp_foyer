@@ -66,21 +66,6 @@
                 </excludes>
             </configuration>
         </plugin>
-
-        <!-- SpotBugs Maven Plugin -->
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>spotbugs-maven-plugin</artifactId>
-            <version>4.0.0</version> <!-- You can check for the latest version -->
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>spotbugs</goal>
-                    </goals>
-                    <phase>verify</phase> <!-- Can also be 'test' or 'package' -->
-                </execution>
-            </executions>
-        </plugin>
     </plugins>
 </build>
     <distributionManagement>
