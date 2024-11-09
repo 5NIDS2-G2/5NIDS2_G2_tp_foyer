@@ -24,9 +24,10 @@ services:
         "spring.datasource.username"  : "root", 
         "spring.datasource.password"  : null,
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL8Dialect",
-        "spring.jpa.hibernate.ddl-auto" : "update"
-        "management.endpoints.web.exposure.include" : "prometheus",
-        "management.endpoint.prometheus.enabled" : "true"
+        "spring.jpa.hibernate.ddl-auto" : "update",
+        "management.endpoints.web.exposure.include" : "*",
+        "management.endpoint.prometheus.enabled" : "true",
+        "management.endpoints.web.base-path" : "/actuator/prometheus"
       }'
     stdin_open: true
     tty: true
