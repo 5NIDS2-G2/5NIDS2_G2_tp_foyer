@@ -27,9 +27,9 @@ services:
         "spring.jpa.hibernate.ddl-auto" : "update",
         "management.endpoints.web.exposure.include" : "*",
         "management.endpoint.prometheus.enabled" : "true",
-        "management.endpoints.web.base-path" : "/actuator",
+        "management.endpoints.web.base-path" : "/actuator/prometheus",
         "management.metrics.export.prometheus.enabled" : "true",
-        "management.server.port" : "8082"
+        "management.server.port" : 8082
       }'
     stdin_open: true
     tty: true
