@@ -80,6 +80,23 @@
             </executions>
         </plugin>
     </plugins>
+         <plugin>
+    <groupId>org.owasp</groupId>
+    <artifactId>dependency-check-maven</artifactId>
+    <version>6.5.3</version>
+    <configuration>
+        <failBuildOnCVSS>11</failBuildOnCVSS>
+        <formats>
+            <format>HTML</format>
+            <format>XML</format>
+        </formats>
+        <skipUpdate>true</skipUpdate>
+        <analyzer>
+            <central>false</central>
+            <nvd>false</nvd>
+        </analyzer>
+    </configuration>
+</plugin>
 </build>
 
     <distributionManagement>
