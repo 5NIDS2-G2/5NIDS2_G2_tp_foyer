@@ -11,6 +11,7 @@ services:
       - "3309:3308"
     volumes:
       - db:/var/lib/mysql
+
   app-timesheet:
     depends_on:
       - mysqldb
@@ -19,15 +20,30 @@ services:
     ports:
       - "8082:8089"
     environment:
-      SPRING APPLICATION_JSON: '{
+      SPRING_APPLICATION_JSON: '{
         "spring.datasource.url" : "jdbc:mysql://mysqldb:3308/db?createDatabaseIfNotExist=true",
         "spring.datasource.username"  : "root", 
-        "spring.datasource.password"  : abdo,
+        "spring.datasource.password"  : "abdo",
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL8Dialect",
         "spring.jpa.hibernate.ddl-auto" : "update"
       }'
     stdin_open: true
     tty: true
 
+  falco:
+    image: falcosecurity/falco:0.39.1
+    container_name: falco
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /dev:/host/dev
+      - /proc:/host/proc:ro
+      - /boot:/host/boot:ro
+      - /lib/modules:/host/lib/modules:ro
+      - /usr:/host/usr:ro
+      - ./falco_rules.local.yaml:/etc/falco/falco_rules.local.yaml
+    command: >
+      falco -o falco_rules.file=/etc/falco/falco_rules.local.yaml
+
 volumes:
-  db :
+  db:
