@@ -3,6 +3,8 @@ version: "3.8"
 services:
   mysqldb:
     image: mysql:8.0
+    networks:
+      - default
     restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=
