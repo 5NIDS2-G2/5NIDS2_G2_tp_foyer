@@ -41,9 +41,12 @@ services:
       - /boot:/host/boot:ro
       - /lib/modules:/host/lib/modules:ro
       - /usr:/host/usr:ro
-      - ./falco_rules.local.yaml:/etc/falco/falco_rules.local.yaml
+      - /var/lib/jenkins/workspace/Projet\ DevSecOps/falco_rules.local.yaml:/etc/falco/falco_rules.local.yaml
     command: >
       falco -o falco_rules.file=/etc/falco/falco_rules.local.yaml
+      
+
+
 
 volumes:
   db:
