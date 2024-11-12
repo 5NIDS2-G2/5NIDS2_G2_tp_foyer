@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 //static ip github webhook test
-//web hook test 
+//web hook test
 @Entity
 @Getter
 @Setter
@@ -17,7 +17,7 @@ import java.util.Set;
 @NoArgsConstructor
 @ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
-//Gestion_Bloc git test
+//Gestion_Bloc git testaaaa
 public class Bloc {
 
     @Id
